@@ -1,0 +1,13 @@
+<apex:page standardController="MerchantsManagementProcess__c" extensions="WorkManagementController" id="thePage" standardStylesheets="false" applyBodyTag="false" docType="html-5.0">
+    <apex:pageBlock >
+       <apex:pageBlockSection >
+           <apex:pageBlockTable value="{!keywork}" var="k" width="100%">
+               <apex:column value="{!k.workStage__c}"/>
+               <apex:column value="{!k.taskName__c}"/>
+               <apex:column value="{!k.StartTime__c}"/>
+               <apex:column value="{!k.EndTime__c}"/>
+               <apex:column value="{!k.AddtionalComment__c}"/>
+           </apex:pageBlockTable>
+       </apex:pageBlockSection>
+       </apex:pageBlock>
+</apex:page>
